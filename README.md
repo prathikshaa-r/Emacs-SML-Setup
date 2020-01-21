@@ -7,8 +7,12 @@ https://courses.cs.washington.edu/courses/cse341/11au/sml-emacs.html
 
 ## Emacs Errors:
 Cannot verify signature
-Add line to .emacs
+Add following to .emacs
 (require 'package)
 (setq package-check-signature nil)
 
-M-x package-install
+Restart emacs.
+
+M-x package-install gnu-elpa-keyring-update
+
+Then remove the lines. Restart emacs.
